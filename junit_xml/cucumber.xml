@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="3.994595">
+<testcase classname="Verify different GET operations using REST-assured" name="Verify one author of the post" time="2.525989">
+<system-out><![CDATA[Given Perform GET operation for "/posts"....................................passed
+And Perform GET for post id = "2"...........................................passed
+Then should obtain author = "Lasse Jova"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify different GET operations using REST-assured" name="Verify collection of authors of posts" time="0.091619">
+<system-out><![CDATA[Given Perform GET operation for "/posts"....................................passed
+Then should obtain authors..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify different GET operations using REST-assured" name="Verify Parameter of GET" time="0.157595">
+<system-out><![CDATA[Given Perform GET operation for "/posts"....................................passed
+Then Should obtain author for GET...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify different GET operations using REST-assured" name="Verify Parameter of Query" time="0.066244">
+<system-out><![CDATA[Given Perform GET operation for "/posts"....................................passed
+Then Should obtain authors number for GET...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify different GET operations using REST-assured" name="Verify Post" time="0.518791">
+<system-out><![CDATA[Given Perform POST operation for "/posts"...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify different GET operations using REST-assured" name="Verify GET with bearer authentication token" time="0.204226">
+<system-out><![CDATA[Given Perform authentication for "/auth/login"..............................passed
+Given Perform GET op for "/posts/3".........................................passed
+Then Author name is "Naveem"................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify different GET operations using REST-assured" name="Verify GET with bearer authentication token for json schema validation" time="0.430131">
+<system-out><![CDATA[Given Perform authentication for "/auth/login"..............................passed
+Given Perform GET op for "/posts/3".........................................passed
+Then Author name is "Naveem" with json validation...........................passed
+]]></system-out>
+</testcase>
+</testsuite>
